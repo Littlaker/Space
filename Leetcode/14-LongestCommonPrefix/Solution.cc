@@ -3,8 +3,8 @@
 
 // O(mn)
 class Solution {
- public:
-  std::string longestCommonPrefix(std::vector<std::string>& strs) {
+public:
+  std::string longestCommonPrefix(std::vector<std::string> &strs) {
     if (!strs.size()) {
       return "";
     }

@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
- public:
+public:
   // 穷举法
   // 复杂度:O(n*n)
   // vector<int> twoSum(vector<int>& nums, int target) {
@@ -23,7 +23,7 @@ class Solution {
 
   // map
   // 时间复杂度:O(n*logn)
-  vector<int> twoSum(vector<int>& nums, int target) {
+  vector<int> twoSum(vector<int> &nums, int target) {
     map<int, int> m;
     vector<int> res;
     for (int i = 0; i < nums.size(); i++) {

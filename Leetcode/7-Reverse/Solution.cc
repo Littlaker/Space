@@ -1,7 +1,7 @@
 #include <limits.h>
 
 class Solution {
- public:
+public:
   int reverse(int x) {
     int ret = 0;
     while (x != 0) {

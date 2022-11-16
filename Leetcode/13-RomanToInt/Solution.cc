@@ -2,7 +2,7 @@
 #include <string>
 
 class Solution {
- public:
+public:
   int romanToInt(std::string str) {
     if (str.empty()) {
       return -1;

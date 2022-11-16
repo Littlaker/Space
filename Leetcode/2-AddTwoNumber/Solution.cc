@@ -1,6 +1,6 @@
 struct ListNode {
   int val;
-  ListNode* next;
+  ListNode *next;
   ListNode(int x) : val(x), next(nullptr) {}
 };
 
@@ -8,8 +8,8 @@ struct ListNode {
  * 注意点：1. 过十进位 2.链表长度不等 3.最后的进位
  */
 class Solution {
- public:
-  ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+public:
+  ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     // 检查入参
     if (!l1) {
       return l2;
@@ -20,8 +20,8 @@ class Solution {
     }
 
     // 执行相加过程
-    ListNode* head = nullptr;
-    ListNode* tail = nullptr;
+    ListNode *head = nullptr;
+    ListNode *tail = nullptr;
     int carry = 0;
 
     while (l1 || l2) {
@@ -30,7 +30,7 @@ class Solution {
       int sum = x + y + carry;
       carry = sum / 10;
 
-      ListNode* node = new ListNode(sum % 10);
+      ListNode *node = new ListNode(sum % 10);
       if (!head) {
         head = node;
         tail = node;
@@ -49,7 +49,7 @@ class Solution {
 
     // 最后的进位
     if (carry) {
-      ListNode* node = new ListNode(carry);
+      ListNode *node = new ListNode(carry);
       tail->next = node;
     }
 

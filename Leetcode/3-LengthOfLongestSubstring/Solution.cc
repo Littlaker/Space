@@ -4,7 +4,7 @@ using namespace std;
 
 // 滑动窗口
 class Solution {
- public:
+public:
   int lengthOfLongestSubstring(std::string s) {
     if (s.empty()) {
       return 0;

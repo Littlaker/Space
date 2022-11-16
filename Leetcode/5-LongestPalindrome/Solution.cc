@@ -4,7 +4,7 @@
 // 动态规划
 
 class Solution {
- public:
+public:
   std::string longestPalindrome(std::string s) {
     int length = s.length();
     if (length < 2) {
