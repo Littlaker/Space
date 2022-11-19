@@ -7,3 +7,4 @@ sudo apt-get install -y vim
 sudo apt-get install -y curl
 sudo apt-get install -y wget
 sudo apt-get install -y jq
+sudo apt-get install -y tcpdump
